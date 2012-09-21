@@ -4,16 +4,14 @@
    
    *  PROCESSING CODE 
   
-   * Interface for grey scale color selection
-   * Communication based on broadcast server example in Shiffman -- learning processing
+   * greyScaleServer -- receives a MESSAGE from and ARDUINO visualizes that MESSAGE locally and 
+   * passes that message to connected SERVERS.
    *
    * 
    */
 
 
   import processing.serial.*;  // import the serial library
-  
-  
   Serial serverSerialPort;     // setup a Serial PORT
  
   Scissors serialParser;       // create a SCISSORS object to parse INCOMING SERIAL messages from Arduino 
@@ -30,7 +28,7 @@
   
    
  
-  Slider greySlider;          // this will DISPLAY the value from ARDUINO
+  Slider greySlider;          // this SLIDER will DISPLAY the value from ARDUINO
    
   
   PFont clientFont;            // font for displaying connected clients
@@ -47,10 +45,10 @@
     // start the serial port
     println(Serial.list());   // List all the available serial ports
    
-    // connect this sketch to the USB port or your Arduino at specified BAUD
-    serverSerialPort = new Serial(this, Serial.list()[99], 9600);  // match baud
+    // connect this sketch to the USB port of your Arduino at specified BAUD
+    serverSerialPort = new Serial(this, Serial.list()[99], 9600);  // match baud and PORT
     
-    // attach the serial parser to the serial PORT
+    // attach the serial parser (SCISSORS) to the serial PORT
     serialParser = new Scissors( serverSerialPort ); 
     
    

@@ -19,7 +19,7 @@ void loop(){
       // assemble a message with GLUE
       messageToServer.clear();                   // clear the old message
       messageToServer.add("Arduino dialValue");  // string prefix
-      messageToServer.add( dialValue );          // add the actual value (int)
+      messageToServer.add( dialValue );          // add the actual dialValue (int)
      
       // send the message with SERIAL
       Serial.println( messageToServer.getPackage()) ;
