@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 A simple one-way telepresence example.\
+\
+1) Build an ANALOG sensor circuit and connect it to PIN A) of your sensor ARDUINO\
+\
+2) Upload <analogInput> code to the sensor ARDUINO.  Test that you are getting readings (open the serial monitor, match BAUD and port)  -- make sure changing sensor changes what you see in monitor.\
+\
+3) Start server -- make sure sensor value ADJUSTS the SLIDER\
+\
+4) Connect LED to PIN6 of your actuator ARDUINO\
+\
+5) Upload <analogOutput> code to your ACTUATOR ARDUINO ( check BAUD and SERIAL PORT) \
+\
+6) Start CLIENT -- this needs two connections:\
+\
+	6a) make sure CLIENT is pointed at your ARDUINO -- set the SERIAL-PORT INDEX and BAUD\
+\
+	6b) make sure the CLIENT is POINTED at your server IP and PORT\
+\
+\
+7) Changing the input on the sensor ARDUINO should change the SERVER, change the CLIENT display and CHANGE the BRIGHTNESS of the ACTUATOR ARDUINO.\
+\
+\
+\
+}
