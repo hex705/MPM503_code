@@ -3,7 +3,7 @@
   
   Scissors messageFromClient;        // SCISSORS parse messages
   
-  int brightnessValue;               // variable to hold the incoming BRIGHTNESS value 
+  int dialValue;               // variable to hold the incoming DIAL value 
   int ledPIN = 6;                    // CONNECT LED to this PIN
   
   
